@@ -88,8 +88,7 @@ a {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-weight: 700;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -210,10 +209,6 @@ h4 {
 .content p {
   margin: 0.9rem 0 2rem;
   font-weight: 500;
-}
-
-.content .btn span {
-  margin-left: 0.1rem;
 }
 
 /* Hero image */
@@ -358,10 +353,6 @@ h4 {
   padding: 2rem;
 }
 
-#projects .readmore {
-  text-align: center;
-}
-
 #project-full {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -392,23 +383,10 @@ h4 {
 }
 
 /* Project CTA */
-.project-content .btn {
-  position: absolute;
-  top: 40px;
-  left: 0;
-}
-
-.project-content .project-image:hover .btn {
-  opacity: 1;
-}
 
 .project-content .project-image img {
   width: 100%;
   height: 100%;
-}
-
-.project-content .btn {
-  opacity: 0;
 }
 
 .card-content {
@@ -443,47 +421,6 @@ h4 {
 }
 
 /* Thank you page */
-.thankyou {
-  height: 100vh;
-}
-
-.thankyou-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-primary-color);
-  height: 100%;
-  overflow: hidden;
-  padding: 1rem;
-  text-align: center;
-}
-
-.thankyou-content h1::before {
-  content: "";
-  position: absolute;
-  top: -400px;
-  left: -700px;
-  width: 700px;
-  height: 700px;
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  z-index: -40000;
-  animation: animate infinite 50s forwards alternate ease-in-out;
-}
-
-.thankyou-content h1::after {
-  content: "";
-  position: absolute;
-  bottom: -500px;
-  right: -700px;
-  width: 700px;
-  height: 700px;
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  z-index: -40000;
-  animation: animate infinite 50s forwards alternate-reverse ease-in-out;
-}
 
 @keyframes animate {
   10% {
@@ -548,46 +485,7 @@ h4 {
   }
 }
 
-.thankyou-content h1 {
-  line-height: 1.1;
-  font-size: 4rem;
-  position: relative;
-}
-
-.thankyou-content p {
-  font-size: 1.3rem;
-  padding: 0 1rem;
-}
-
 /* External projects page */
-#hero-project .navbar {
-  background: var(--navbar-bg);
-  border-bottom: 0;
-  position: sticky;
-}
-
-#hero-project {
-  height: 50vh;
-  background: url(../img/projects/projects.jpg) no-repeat center center/cover;
-  box-shadow: inset 10px 100px 1000px rgba(0, 0, 0, 0.9);
-}
-
-#hero-project .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 100%;
-  color: #fff;
-  padding-left: 2rem;
-}
-
-#hero-project .content-text {
-  margin-bottom: 2rem;
-}
-
-#hero-project .content-text .underline {
-  background: #fff;
-}
 
 /* Footer */
 #footer {
@@ -599,11 +497,6 @@ h4 {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-}
-
-#footer .footer-container .btn {
-  padding: 0.3rem 0.5rem;
-  justify-self: flex-end;
 }
 
 #footer .footer-container p {
